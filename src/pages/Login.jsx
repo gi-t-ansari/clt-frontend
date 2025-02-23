@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useDispatch } from "react-redux";
-import { loginSuccess } from "../redux/authSlice";
+import { loginSuccess } from "../redux/slices/authSlice";
 import { useNavigate } from "react-router-dom";
 
 const loginSchema = yup.object().shape({
@@ -81,3 +81,5 @@ const Login = () => {
     </div>
   );
 };
+
+export default Login;

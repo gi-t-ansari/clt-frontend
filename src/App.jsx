@@ -2,7 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import PrivateRoute from "./components/PrivateRoute";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
-import ResignationForm from "./pages/ResignationForm";
+import SubmitResignation from "./pages/SubmitResignation";
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
       </Route>
 
       <Route element={<PrivateRoute allowedRoles={["employee"]} />}>
-        <Route path="/resignation" element={<ResignationForm />} />
+        <Route path="/resignation" element={<SubmitResignation />} />
       </Route>
     </Routes>
   );
